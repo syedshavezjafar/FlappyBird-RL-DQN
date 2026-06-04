@@ -55,18 +55,27 @@ FlappyBird_RL/
 
 ---
 
+
 ## 🏗️ Network Architecture
 
 ```text
-Input State (12 Features)
-        │
-        ▼
-Dense Layer (256 Neurons)
-        │
-      ReLU
-        │
-        ▼
-Output Layer (2 Actions)
+State (12)
+   │
+   ▼
+Linear(12 → 256)
+   │
+  ReLU
+   │
+   ▼
+Linear(256 → 256)
+   │
+  ReLU
+   │
+   ▼
+Linear(256 → 2)
+   │
+   ▼
+Q-values for Actions
 ```
 
 ---
