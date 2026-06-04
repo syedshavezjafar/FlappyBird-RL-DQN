@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Training outputs
+runs/
+
+# Virtual environments
+venv/
+ml_env/
+
+# OS files
+.DS_Store
